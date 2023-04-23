@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foxikle</title>
+    <link rel="stylesheet" href="plugins.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" type="image/x-icon" href="Foxikle.png" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                  <i class="fa fa-times" onClick="hideMenu()"></i>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="server.html"> Server </a></li>
+                    <li><a href="plugins.html" class="plugins"> Plugins </a></li>
+                    <li><a href=""> Blog </a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Plugins</h1>
+        <div class="text-box">
+          <h1>Spigot Plugins</h1>
+          <p>Here is the official hub for my Spigot Plugins. Spigot plugins act as server side mods to minecraft. </p>
+        </div>
+    </section>
+    <section class="page-content">  
+      <div class="plugin-links" id="plugin-links">
+        <ul>
+            <li>
+              <h1>FoxRank</h1>
+              <p>
+                The centralized player <br>
+                managment plugin. Mute, <br>
+                ban, and set a player's <br>
+                permissions with easy<br>
+                to use commands. 
+                </p>
+              <a href="https://github.com/Foxikle/FoxRank" class="fr-download-btn">Download</a>
+            </li>
+            <li>
+              <h1>Custom NPCs</h1>
+              <p>
+                The simple, intuative, <br>
+                and scalable NPC plugin. <br>
+              </p>
+              <a href="https://github.com/Foxikle/">Download</a>
+            </li>
+            <li>
+              <h1>FoxBan V2</h1>
+              <p>
+                The most simple, user friendly, <br>
+                light-wieght and configurable <br>
+                punishment plugin.
+              </p>
+              <a href="https://github.com/Foxikle/FoxBanV2">Download</a>
+            </li>
+        </ul>
+    </div>
+    </section>
+    <footer>
+      <p>© 2023 Foxikle. All Rights Reserved.</p>
+    </footer>
+
+	<script>
+
+    var navLinks = document.getElementById("nav-links");
+
+    function showMenu(){
+      navLinks.style.right = "0px";
+    }
+
+    
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+  </body>
+</html>

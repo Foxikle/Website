@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foxikle</title>
+    <link rel="stylesheet" href="server.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" type="image/x-icon" href="Foxikle.png" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                  <i class="fa fa-times" onClick="hideMenu()"></i>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="server.html"> Server </a></li>
+                    <li><a href="plugins.html"> Plugins </a></li>
+                    <li><a href=""> Blog </a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Minecraft Server</h1>
+        <div class="info-box">
+          <h1>General Information</h1>
+          <p> The Foxikle Network supports version 1.19 <br> There is currently one gamemode. Scroll down for more information on the games. <br> The server is an alpha server. Please report any bugs by opening a ticket in the Discord Server.</p>
+          <p1 id="ipButton" class="ip-btn" onclick="copy()"> Server IP address</p1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="castle-seige">
+        <h1>Castle Siege</h1>
+        <p> A fast paced pvp game mode designed for a variety of playstyles. <br> The goal is to destory the opposing castle's gate and take <br> their kingdom for yourself! Kill the opposing king to become the victor!</p>
+      </div>
+    </section>
+    <section class="footer">
+      <footer>
+        <p>© 2023 Foxikle. All Rights Reserved.</p>
+      </footer>
+    </section>
+   
+
+	<script>
+
+    var navLinks = document.getElementById("nav-links");
+
+    function showMenu(){
+      navLinks.style.right = "0px";
+    }
+
+    
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+
+    function copy(){
+        console.log("Copied ip to clipboard!");
+        navigator.clipboard.writeText("alpha.foxikle.dev");
+        copiedText();
+    }
+
+    function copiedText(){
+        document.getElementById("ipButton").innerHTML = "Copied!";
+        setTimeout(resetText, 1000);
+    }
+    function resetText(){
+        document.getElementById("ipButton").innerHTML = "Server IP address";
+    }
+
+  </script>
+  </div>
+  </body>
+</html>
