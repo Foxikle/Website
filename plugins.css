@@ -10,7 +10,7 @@
 .header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(7, 35, 33,1)), url(images/banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -22,57 +22,100 @@
     padding-bottom: 100px;
     font-size: 80px;
 }
+.support{
+    background-color: #072321;
+    text-align: center;
+}
+.support h1{
+    color: #fff;
+    font-size: 50px;
 
-
-
+}
+.support p{
+    color: #fff;
+    padding: 25px;
+}
+.discord-btn{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #df5919;
+    border-radius: 7px;
+    padding: 4px 8px 4px 8px;
+    transition: 250ms;
+}
+.discord-btn:hover{
+    color: #072321;
+    text-decoration: none;
+    background-color: #df5919;
+    border-radius: 7px;
+    padding: 6px 60px 6px 60px;
+    transition: 250ms;
+    
+}
 .plugin-links{
     flex: 1;
     text-align: center;
+    
 }
 .plugin-links ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 50px 0 100px 0;
     overflow: visible;
     background-color: #072321;
     columns: 3;
+    
 }
 .plugin-links ul li {
-    display: inline;
+    border: 2px solid #df5919;
+    border-radius: 15px;
+    display: inline-flex;
     align-items: center;
     margin: 0px 60px 0px 60px;
     display: block;
     color: white;
     text-align: center;
     padding: 8px;
-    
+    background-color: #072321;
+    -webkit-column-break-inside: avoid;
+    transition: 250ms;
+}
+.plugin-links ul li p{
+    margin-bottom: 20px;
 }
 .plugin-links ul li a{
+    border: 2px solid #072321;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
     color: #FFF;
     text-decoration: none;
 }
+.plugin-links .plugin-links-title{
+    padding-top: 30px;
+    font-size: 50px;
+    background-color: #072321;
+    color: #fff;
+}
+.plugin-links ul li a:hover{
+    border: 2px solid #072321;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    color: #df5919;
+    text-decoration: none;
+    transition: 250ms;
+    background-color: #072321;
+}
 .plugin-links ul li:hover{
-   background-color: #df5919; 
-   transition: 250ms;
+    padding: 50px 0 50px 0;
+    background-color: #df5919; 
+    color: #072321;
+    transition: 250ms;
 }
 
 .page-content{
     align-items: center;
 }
 
-
-
-
-
-
-.info-box{
-    width: 90%;
-    color: #FFF;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    text-align: center;
-}
 .content{
     position: relative;
 }
@@ -104,23 +147,8 @@
     margin: 50x, 0, 40px;
     font-size: 14;
 }
-.ip-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #4e683d;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-.ip-btn:hover{
-    border: 1px solid #df5919;
-    
-    transition: .5s;
-}
 footer {
+    padding-top: 100px;
     background-color: #072321;
     color: #fff;
     text-align: center;

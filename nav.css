@@ -17,20 +17,37 @@ nav{
     background-color: #072321;
 }
 .nav-links ul li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: inline-block;
+    transition: 250ms;
 }
 .nav-links ul li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 17px;
     text-decoration: none;
+    transition: 250ms;
+}
+.nav-links ul li a:hover{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    transition: 250ms;
 }
 .nav-links ul li:hover{
-   background-color: #df5919; 
-   transition: 250ms;
+    padding: 0 20px 0 20px ;
+    transition: 250ms;
+    background-color: #df5919;
+}
+footer {
+    background-color: #072321;
+    color: #fff;
+    text-align: center;
 }
 nav .fa {
     display: none;

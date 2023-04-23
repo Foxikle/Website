@@ -10,7 +10,7 @@
 .header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -62,7 +62,7 @@
     font-size: 14;
 }
 .castle-seige{
-    background-image: linear-gradient(rgba(4,9,30,0.1), rgba(4,9,30,0.5)), url(cs_bg.png);
+    background-image: linear-gradient(rgba(4,9,30,0.1), rgba(4,9,30,0.5)), url(images/cs_bg.png);
     height: 100vh;
     background-size: cover;
     width: 100%;
