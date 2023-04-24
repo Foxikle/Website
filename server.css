@@ -106,6 +106,18 @@ footer {
 nav .fa {
     display: none;
 }
+.server{
+    padding-top: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #df5919;
+    border-radius: 10px;
+}
+.server:hover{
+    padding-top: 3px;
+    border-radius: 8px;
+    border: 1px solid #df5919;
+    transition: 250ms;
+}
 @media (max-width: 700px) {
     .fa fa-bars{
         display: block;

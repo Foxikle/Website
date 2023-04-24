@@ -55,7 +55,8 @@
 .plugin-links{
     flex: 1;
     text-align: center;
-    
+    height: 500px;
+    background-color: #072321;
 }
 .plugin-links ul{
     list-style-type: none;
@@ -152,6 +153,18 @@ footer {
     background-color: #072321;
     color: #fff;
     text-align: center;
+}
+.plugins{
+    padding-top: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #df5919;
+    border-radius: 10px;
+}
+.plugins:hover{
+    padding-top: 3px;
+    border-radius: 8px;
+    border: 1px solid #df5919;
+    transition: 250ms;
 }
 nav .fa {
     display: none;
